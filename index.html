@@ -64,10 +64,14 @@
 						<h3 class="title">About Me</h3>
 						<article>
 							<p>I am Samuel Asor (Tochi), the first of two children from a lovely family. A self taught software developer based in the beautiful city of Lagos, Nigeria. You can always find me online with the code name <mark>Sammyskills</mark>.</p>
-							<p>Over the years, I've been able to work on different <a href="javascript:void(0);" id="go-to-projects">projects</a> making use of the latest industry standards and practises, such as <b>HTML5, CSS3, PHP, MySQL, Javascript, jQuery, WordPress, Joomla, Opencart, Magento, Drupal and also Server Adminstration using SSH</b>.</p>
+							<p>Over the years, I've been able to work on different <a href="javascript:void(0);" class="go-to-projects">projects</a> making use of the latest industry standards and practises, such as <b>HTML5, CSS3, PHP, MySQL, Javascript, jQuery, WordPress, Joomla, Opencart, Magento, Drupal and also Server Adminstration using SSH</b>.</p>
 							<p>I've done stuffs for <a href="http://codelagos.org" target="_blank">Lagos State Government</a>, <a href="http://familybooster.com">Living Home Ventures</a>, <a href="http://bisiadewale.com">Pastor Bisi Adewale</a>, <a href="http://picconsultingng.com">PIC Consulting</a>, <a href="http://eattohealth.com.ng">EatToHealth Nigeria</a>, <a href="http://busyhands.ng">BusyHands</a>, and many which you many know. I am just a phone call away to handling your project.</p>
 							<p>Currently, I'm working on creating the next big thing with regards to website speed and optimizations. Please stay tuned.</p>
 						</article>
+						<br><br>
+						<a class="btn waves-effect waves-light grey darken-4 go-to-projects">See Latest Projects
+							<i class="material-icons left">arrow_downward</i>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -77,7 +81,7 @@
 				<div class="col s8 offset-s4">
 					<div class="wrapper">
 						<h3 class="title">My Projects</h3>
-						<p>Here are some of the <b>Latest</b> projects I've worked on <em>(and of course, which I'm proud of <i class="material-icons red-text">favorite</i>)</em>.</p>
+						<p>Here are some of the <b>Latest</b> projects I've worked on <em>(and of course, which I'm proud of <i class="material-icons red-text">favorite</i>)</em>. <a href="javascript:void(0);" id="back-to-about">About Me?</a></p>
 						<div class="row">
 							<div class="col s4">
 								<div class="card">
@@ -116,7 +120,7 @@
 									</div>
 									<div class="card-content">
 										<span class="card-title activator grey-text text-darken-4">Event Meme<i class="material-icons right">more_vert</i></span>
-										<p><a href="http://bisiadewale.com/dp" target="_blank">Visit live example</a></p>
+										<p><a href="http://bisiadewale.com/dp" target="_blank">See live example</a></p>
 									</div>
 									<div class="card-reveal">
 										<span class="card-title grey-text text-darken-4">Event Meme<i class="material-icons right">close</i></span>
@@ -145,10 +149,14 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#go-to-projects').click(function() {
+			$('.go-to-projects').click(function() {
 				$('.about').slideUp('slow');
 				$('.projects').removeClass('hide').slideDown('slow');
 			});
+			$('#back-to-about').click(function() {
+				$('.projects').slideUp('slow');
+				$('.about').slideDown('slow');
+			})
 		});
 	</script>
 </body>
